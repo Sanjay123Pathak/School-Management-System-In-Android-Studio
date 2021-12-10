@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/lpu3"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:scaleType="centerCrop"
+    android:id="@+id/nav_header_Image"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="2dp"
+      android:background="@color/whatsapp">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/nav_header_Text1"
+          android:textSize="30sp"
+          android:gravity="center"
+          android:textStyle="bold"
+          android:textColor="@color/yellow"
+          android:layout_gravity="center"
+          android:padding="10dp"
+          android:elevation="20dp"
+          android:alpha=".8"
+          android:layout_marginTop="5dp"
+          android:textAlignment="center"
+          android:text="@string/header_1st_text" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/nav_header_Text2"
+          android:textSize="20sp"
+          android:gravity="center"
+          android:textStyle="italic"
+
+          android:layout_gravity="center"
+          android:textColor="@color/black"
+          android:text="@string/nav_header_2nd_text"/>
+  </LinearLayout>
+</LinearLayout>

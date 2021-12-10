@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SchoolManagementSystemApp</string>
+    <string name="open_toolbar">Open></string>
+    <string name="close_toolbar">Close</string>
+    <string name="header_1st_text">Er.Sanjay Pathak</string>
+    <string name="nav_header_2nd_text">Web and App Developer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home Fragment</string>
+    <string name="login_fragment">Login Fragment</string>
+    <string name="setting_fragment">Setting Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

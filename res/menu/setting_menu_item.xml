@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Go To Home "
+        android:id="@+id/goToHome"/>
+    <item android:title=" Go To Login Page"
+        android:id="@+id/goToLogin"/>
+
+</menu>

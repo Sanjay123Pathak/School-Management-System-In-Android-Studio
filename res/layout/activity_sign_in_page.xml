@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGnd"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Sign In Here Now"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:orientation="vertical"
+      >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/signInProfileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="chooseImages"
+            android:src="@drawable/lpu3"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="0dp"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/loginColor"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:id="@+id/sgInName"
+                android:textColor="@color/black"
+               android:paddingLeft="10dp"
+                android:textColorHint="@color/white"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Email "
+                android:layout_marginTop="10dp"
+                android:id="@+id/sgInEmail"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Login Password "
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/sgInPassword"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/white"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Your Date of Birth "
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:id="@+id/sgInDob"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/yellow" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Addresses "
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/sgInAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="20sp"
+                android:padding="5dp"
+
+                android:id="@+id/maleRb"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:padding="5dp"
+                android:textSize="20sp"
+
+                android:id="@+id/femaleRb"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:padding="5dp"
+                android:textSize="20sp"
+
+                android:id="@+id/othersRb"/>
+        </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signBtn"
+
+                    android:onClick="signIn"
+                    android:text="Sign In"
+                    tools:ignore="OnClick" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have a account ?"
+                    android:textSize="20sp"
+                    android:id="@+id/goToSignPage"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="goToLoginPage"
+                    android:textColor="@color/white"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

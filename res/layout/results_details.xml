@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semTxt"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkCyan"
+        android:text=" Term : 1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semCGPA"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkCyan"
+        android:text=" TCGPA : 7.19"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courses"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text=" CSE226 ::"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseNames"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="Android App Deployment"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grades"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text=" A+ "/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeIcon"
+            android:icon="@drawable/home_icon"
+            android:menuCategory="secondary"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/settingIcon"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:menuCategory="secondary"
+
+            android:title="Setting" />
+
+        >
+        <item
+            android:id="@+id/ContactIcon"
+            android:icon="@drawable/call_icon"
+            android:menuCategory="secondary"
+
+            android:title="Contact" />
+        <item
+            android:id="@+id/announcementIcon"
+            android:icon="@drawable/announcement_icon"
+            android:menuCategory="secondary"
+
+            android:title="Announcement"/>
+        <item
+            android:id="@+id/logOutIcon"
+            android:icon="@drawable/logout"
+            android:menuCategory="secondary"
+
+            android:title="Logout" />
+      />
+    </group>
+</menu>
