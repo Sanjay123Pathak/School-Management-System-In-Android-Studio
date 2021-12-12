@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".AssignmentActivitiy">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Assignments Details"
+        android:textSize="25sp"
+        android:textColor="@color/yellow"
+        android:padding="10dp"
+        android:background="@color/darkCyan"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/assignmentListView"
+                android:dividerHeight="3px"
+                android:divider="@color/black"
+                android:listSelector="@color/teal_700"
+                tools:listitem="@layout/assignment_layout"
+                ></ListView>
+        </LinearLayout>
+
+
+</LinearLayout>
